@@ -107,7 +107,7 @@ def target_communication(ip):
             print(result)
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-sock.bind(('192.168.88.130', 5555))
+sock.bind(('127.0.01', 5555)) # Change IP and PORT
 
 def check_OS():
     if os.system('ver') in ['Microsoft', 'Windows']:
